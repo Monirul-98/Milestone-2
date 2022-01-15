@@ -15,6 +15,7 @@ main {
   font-weight: bold;
   text-decoration: none;
   padding: 10px 25px;
+  animation: moveInBottom 2s ease-out;
 }
 /*---------------
  Heading styles 
@@ -33,9 +34,12 @@ main {
   font-size: 52px;
   color: #3a3a3a;
   margin-bottom: 15px;
+  animation: moveInLeft 1s ease-out;
 }
+
 .heading-text {
   margin-bottom: 15px;
+  animation: moveInBottom 2s ease-out;
 }
 .heading-right {
   width: 400px;
@@ -211,4 +215,36 @@ Footer styling
 }
 .fab:not(:last-child) {
   margin-right: 20px;
+}
+
+/*-------------
+Animation Typing 
+-----------------*/
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

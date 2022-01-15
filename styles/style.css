@@ -6,6 +6,11 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+header {
+  height: 80px;
+  width: 1300px;
+  margin: 0 auto;
+}
 main {
   max-width: 1300px;
 }
@@ -16,6 +21,39 @@ main {
   text-decoration: none;
   padding: 10px 25px;
   animation: moveInBottom 2s ease-out;
+}
+/*---------------
+ Navigation bar styles 
+ -----------------*/
+nav {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3a3a3a;
+}
+.logo-box {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+.navigation li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+.navigation li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.fas {
+  font-size: 20px;
 }
 /*---------------
  Heading styles 

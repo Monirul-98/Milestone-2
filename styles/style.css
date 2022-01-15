@@ -9,6 +9,11 @@ body {
 main {
   max-width: 1300px;
 }
+.btn {
+  background-color: #e02c6d;
+  color: #fff;
+  font-weight: bold;
+}
 /*---------------
  Heading styles 
  -----------------*/
@@ -19,13 +24,68 @@ main {
   align-items: center;
 }
 .heading-left {
-  /* padding-left: 30px; */
-  margin: 40px;
+  width: 600px;
+  margin: 70px;
 }
 .heading-title {
   font-size: 52px;
   color: #3a3a3a;
+  margin-bottom: 15px;
+}
+.heading-text {
+  margin-bottom: 15px;
 }
 .heading-right {
-  margin-right: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-right img {
+  width: 100%;
+  background-image: url(../images/Circle\ design.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prebook-btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.prebook-btn i {
+  margin-left: 10px;
+}
+
+/*----------------
+ Horizontal line styling 
+ ---------------------*/
+
+.shade {
+  margin: 40px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(98, 107, 112),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/*---------------
+Companies Section Styling 
+------------------*/
+.companies {
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*---------------
+Popular products Styling 
+------------------*/
+
+.products-title {
 }
